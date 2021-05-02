@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.top-player, .blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 20px;
+    place-items: center;
+}
+.top-player{
+    grid-template-columns: repeat(3, 1fr);
+}
+.blogs{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.player img{
+    height: 50px;
+    margin-right: 20px;
+}
+.thambnail img{
+    width: 200px;
+    margin-right: 20px;
+}
+.player, .blog{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:992px) {
+    .top-player{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
